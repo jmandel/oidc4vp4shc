@@ -16,8 +16,6 @@ export interface PresentationDefinition {
         profile?: string[];
       }[];
       optional: boolean;
-      // ["Patient", "Coverage"]
-      // ["http://hl7.org/fhir/us/insurance-card/StructureDefinition/C4DIC-Coverage"]
     };
   }[];
 }
@@ -128,7 +126,7 @@ const scopes: Record<string, PresentationDefinition> = Object.fromEntries(
 SHC Feature:
 
  * Adds format: shc_vc
- * Add constraints.fhirVersion, constraints.fhirBundle
+ * Add constraints.fhirVersion, constraints.fhirBundleContains
 
 */
 
